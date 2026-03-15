@@ -261,20 +261,16 @@ img {
 
 .project-card-image {
   height: 160px;
-  background: linear-gradient(135deg, #F4A261 0%, #E76F8B 50%, #C3A6D8 100%);
+  background: #ffffff;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
 }
 
-.project-card-image-white {
-  background: #ffffff;
-}
-
 .project-logo {
-  max-height: 80px;
-  max-width: 80%;
+  max-height: 120px;
+  max-width: 85%;
   object-fit: contain;
 }
 
