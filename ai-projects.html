@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Engineering Projects | Mendy Cohen</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .detail-hero {
+      padding: 4rem 0 3rem;
+      min-height: auto;
+    }
+    .detail-hero .container {
+      display: block;
+      max-width: 800px;
+    }
+    .detail-back {
+      display: inline-block;
+      margin-bottom: 2rem;
+    }
+    .detail-title {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 2.4rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #2D3436;
+      margin-bottom: 0.5rem;
+    }
+    .detail-meta {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1rem;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #555;
+      margin-bottom: 2rem;
+    }
+    .detail-body {
+      padding: 2rem 0 4rem;
+    }
+    .detail-body .container {
+      max-width: 800px;
+    }
+    .proj-block {
+      margin-bottom: 3rem;
+      padding-bottom: 2.5rem;
+      border-bottom: 1px solid #eee;
+    }
+    .proj-block:last-child {
+      border-bottom: none;
+    }
+    .proj-title {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: #2D3436;
+      margin-bottom: 0.4rem;
+    }
+    .proj-link {
+      font-size: 0.9rem;
+      margin-bottom: 1rem;
+      display: inline-block;
+    }
+    .proj-link a {
+      color: #E76F8B;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .proj-link a:hover {
+      text-decoration: underline;
+    }
+    .detail-section-title {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.2rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #E76F8B;
+      margin-bottom: 1.5rem;
+    }
+    .detail-list {
+      list-style: none;
+      padding: 0;
+      margin-bottom: 1.2rem;
+    }
+    .detail-list li {
+      position: relative;
+      padding-left: 1.5rem;
+      margin-bottom: 1rem;
+      font-size: 1.02rem;
+      line-height: 1.7;
+      color: #444;
+    }
+    .detail-list li::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0.65rem;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #F4A261, #E76F8B);
+    }
+    .detail-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+      margin-top: 0.5rem;
+    }
+    @media (max-width: 768px) {
+      .detail-title { font-size: 1.8rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <section class="detail-hero gradient-bg">
+    <div class="container">
+      <a href="index.html#projects" class="btn btn-sm detail-back">Back to Portfolio</a>
+      <h1 class="detail-title">AI Engineering Projects</h1>
+      <p class="detail-meta">Self-Directed Builds &amp; Open Source</p>
+    </div>
+  </section>
+
+  <section class="detail-body">
+    <div class="container">
+
+      <div class="proj-block">
+        <h3 class="proj-title">SWIFT RMA Self-Service Agent</h3>
+        <ul class="detail-list">
+          <li>Designed an AI-powered self-service agent automating SWIFT RMA static-data inquiries, addressing ~212 hours (0.1 FTE) per year of manual request volume (~7 requests/day).</li>
+          <li>Reduced subject-matter-expert interruption and improved consistency for requesters by turning a recurring high-touch process into a self-service workflow.</li>
+        </ul>
+        <div class="detail-tags">
+          <span class="skill-tag">Eliza (LLM)</span>
+          <span class="skill-tag">Agentic AI</span>
+          <span class="skill-tag">Process Automation</span>
+        </div>
+      </div>
+
+      <div class="proj-block">
+        <h3 class="proj-title">mailbag</h3>
+        <p class="proj-link"><a href="https://github.com/mendy-cohen/mailbag" target="_blank" rel="noopener noreferrer">github.com/mendy-cohen/mailbag →</a></p>
+        <ul class="detail-list">
+          <li>Multi-agent Python pipeline (7 specialized agents) that synthesizes daily market, AI, and geopolitical intelligence from RSS feeds, congressional and insider trading data, and analyst ratings into a personalized brief.</li>
+          <li>Automated end-to-end via GitHub Actions CI/CD on a daily cron schedule, with results delivered via Telegram and published as a PWA on Cloudflare Pages.</li>
+        </ul>
+        <div class="detail-tags">
+          <span class="skill-tag">Python</span>
+          <span class="skill-tag">Multi-Agent Systems</span>
+          <span class="skill-tag">GitHub Actions/CI-CD</span>
+          <span class="skill-tag">Anthropic API</span>
+          <span class="skill-tag">Cloudflare Pages</span>
+        </div>
+      </div>
+
+      <div class="proj-block">
+        <h3 class="proj-title">linkedin-network-intelligence</h3>
+        <p class="proj-link"><a href="https://github.com/mendy-cohen/linkedin-network-intelligence" target="_blank" rel="noopener noreferrer">github.com/mendy-cohen/linkedin-network-intelligence →</a></p>
+        <ul class="detail-list">
+          <li>Open-source MCP server + Claude Code plugin that turns a LinkedIn data export into a queryable networking assistant, answering questions like "who do I know at Lockheed Martin?" directly inside Claude.</li>
+          <li>Built a weighted contact-scoring algorithm (company match, role relevance, relationship history, industry alignment, recency) to rank contacts for outreach and job-search relevance; published with full setup documentation.</li>
+        </ul>
+        <div class="detail-tags">
+          <span class="skill-tag">Python</span>
+          <span class="skill-tag">MCP (Model Context Protocol)</span>
+          <span class="skill-tag">Claude Code Plugin</span>
+          <span class="skill-tag">FastMCP</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p class="footer-text">Mendy Cohen Digital Portfolio</p>
+    <nav class="footer-nav">
+      <a href="index.html#home">Home</a>
+      <a href="index.html#projects">Explore</a>
+      <a href="index.html#about">About</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+  </footer>
+
+</body>
+</html>

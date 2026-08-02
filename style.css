@@ -72,13 +72,71 @@ img {
   font-size: 0.8rem;
 }
 
+/* ========== TOP NAV ========== */
+.topnav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background: #2D3436;
+  padding: 0.75rem 0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+}
+
+.topnav-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.topnav-brand {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.3rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: #fff;
+}
+
+.topnav-links {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.topnav-links a {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.8);
+  transition: color 0.2s;
+}
+
+.topnav-links a:hover {
+  color: #fff;
+}
+
+.topnav-resume {
+  background: #5DADE2 !important;
+  color: #fff !important;
+  padding: 0.5rem 1.5rem !important;
+  font-size: 0.7rem !important;
+  border-radius: 50px;
+}
+
+.topnav-resume:hover {
+  background: #4A9CD4 !important;
+}
+
 /* ========== GRADIENT BACKGROUNDS ========== */
 .gradient-bg {
-  background: linear-gradient(135deg, #F4A261 0%, #E76F8B 40%, #C3A6D8 75%, #f0e4f7 100%);
+  background: linear-gradient(135deg, #1B2838 0%, #2C3E50 40%, #34495E 75%, #3D5A73 100%);
 }
 
 .gradient-bg-subtle {
-  background: linear-gradient(135deg, #fef3ec 0%, #fde8ee 40%, #f3ebf8 75%, #f8f4fc 100%);
+  background: linear-gradient(135deg, #E8EEF2 0%, #DCEAF2 40%, #E0E8F0 75%, #EDF2F7 100%);
 }
 
 /* ========== HERO SECTION ========== */
@@ -88,6 +146,7 @@ img {
   align-items: center;
   position: relative;
   overflow: hidden;
+  padding-top: 60px;
 }
 
 .hero .container {
@@ -110,7 +169,7 @@ img {
   letter-spacing: 0.25em;
   text-transform: uppercase;
   line-height: 1.1;
-  color: #2D3436;
+  color: #FFFFFF;
 }
 
 .hero-subtitle {
@@ -120,7 +179,7 @@ img {
   font-style: italic;
   letter-spacing: 0.15em;
   text-transform: uppercase;
-  color: #2D3436;
+  color: rgba(255,255,255,0.85);
   margin-top: 0.25rem;
 }
 
@@ -129,7 +188,7 @@ img {
   font-weight: 500;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: #3d3d3d;
+  color: rgba(255,255,255,0.7);
   margin-top: 1.5rem;
   max-width: 550px;
 }
@@ -147,7 +206,7 @@ img {
   height: 380px;
   background: #fff;
   border-radius: 4px;
-  box-shadow: 8px 8px 0 rgba(255, 255, 255, 0.6);
+  box-shadow: 8px 8px 0 rgba(255, 255, 255, 0.15);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -202,22 +261,17 @@ img {
 
 .project-card-image {
   height: 160px;
-  background: linear-gradient(135deg, #F4A261 0%, #E76F8B 50%, #C3A6D8 100%);
+  background: #ffffff;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
 }
 
-.project-card-image .project-icon {
-  font-size: 2.5rem;
-  opacity: 0.7;
-}
-
-.project-card-image .project-icon-svg {
-  width: 80px;
-  height: 80px;
-  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
+.project-logo {
+  max-height: 120px;
+  max-width: 85%;
+  object-fit: contain;
 }
 
 .project-card-body {
@@ -264,20 +318,13 @@ img {
 }
 
 .about .section-heading {
-  color: #2D3436;
-}
-
-.about-nav {
-  display: flex;
-  gap: 0.75rem;
-  margin-bottom: 2rem;
-  flex-wrap: wrap;
+  color: #FFFFFF;
 }
 
 .about-text {
   font-size: 1.05rem;
   line-height: 1.8;
-  color: #444;
+  color: rgba(255,255,255,0.85);
   max-width: 700px;
 }
 
@@ -326,7 +373,7 @@ img {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   margin-bottom: 1rem;
-  color: #E76F8B;
+  color: #5DADE2;
 }
 
 .skills-tags {
@@ -339,12 +386,12 @@ img {
 .skill-tag {
   display: inline-block;
   padding: 0.5rem 1.2rem;
-  background: linear-gradient(135deg, #fef3ec, #fde8ee);
+  background: linear-gradient(135deg, #E8EEF2, #DCEAF2);
   border-radius: 50px;
   font-size: 0.85rem;
   font-weight: 500;
   color: #2D3436;
-  border: 1px solid rgba(231, 111, 139, 0.2);
+  border: 1px solid rgba(93, 173, 226, 0.25);
 }
 
 /* ========== CONTACT SECTION ========== */
@@ -354,7 +401,7 @@ img {
 }
 
 .contact .section-heading {
-  color: #2D3436;
+  color: #FFFFFF;
 }
 
 .contact-info {
@@ -363,34 +410,34 @@ img {
 
 .contact-email {
   font-size: 1.2rem;
-  color: #444;
+  color: rgba(255,255,255,0.85);
   margin-bottom: 1.5rem;
 }
 
 .contact-email a {
-  color: #2D3436;
-  border-bottom: 2px solid #E76F8B;
+  color: #fff;
+  border-bottom: 2px solid #5DADE2;
   transition: color 0.2s;
 }
 
 .contact-email a:hover {
-  color: #E76F8B;
+  color: #5DADE2;
 }
 
 .contact-phone {
   font-size: 1.1rem;
-  color: #444;
+  color: rgba(255,255,255,0.85);
   margin-bottom: 1.5rem;
 }
 
 .contact-phone a {
-  color: #2D3436;
-  border-bottom: 2px solid #C3A6D8;
+  color: #fff;
+  border-bottom: 2px solid #5DADE2;
   transition: color 0.2s;
 }
 
 .contact-phone a:hover {
-  color: #C3A6D8;
+  color: #5DADE2;
 }
 
 .contact-social {
@@ -415,14 +462,22 @@ img {
 
 .contact-social a:hover {
   transform: scale(1.1);
-  background: #E76F8B;
+  background: #5DADE2;
 }
 
-.contact-nav {
-  display: flex;
-  gap: 0.75rem;
-  justify-content: center;
-  margin-top: 3rem;
+.contact-resume {
+  margin-top: 2.5rem;
+}
+
+/* Buttons on dark gradient backgrounds */
+.gradient-bg .btn {
+  background: rgba(255,255,255,0.15);
+  border: 1px solid rgba(255,255,255,0.4);
+  color: #fff;
+}
+.gradient-bg .btn:hover {
+  background: rgba(255,255,255,0.25);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.3);
 }
 
 /* ========== FOOTER ========== */
@@ -453,7 +508,7 @@ img {
 }
 
 .footer-nav a:hover {
-  color: #E76F8B;
+  color: #5DADE2;
 }
 
 /* ========== ANIMATIONS ========== */
@@ -489,6 +544,14 @@ img {
 }
 
 @media (max-width: 768px) {
+  .topnav-links {
+    gap: 1rem;
+  }
+
+  .topnav-links a:not(.topnav-resume) {
+    font-size: 0.65rem;
+  }
+
   .hero .container {
     flex-direction: column;
     text-align: center;
@@ -547,6 +610,14 @@ img {
 }
 
 @media (max-width: 480px) {
+  .topnav-links a:not(.topnav-resume) {
+    display: none;
+  }
+
+  .topnav-brand {
+    font-size: 1.1rem;
+  }
+
   .hero-name {
     font-size: 2rem;
   }

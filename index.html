@@ -11,18 +11,27 @@
 </head>
 <body>
 
+  <!-- ========== TOP NAV ========== -->
+  <nav class="topnav" id="topnav">
+    <div class="container topnav-inner">
+      <a href="#home" class="topnav-brand">MC</a>
+      <div class="topnav-links">
+        <a href="#projects">Explore</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+        <a href="Mendy_Cohen_Resume_2026.pdf" target="_blank" class="btn btn-sm topnav-resume">Resume</a>
+      </div>
+    </div>
+  </nav>
+
   <!-- ========== HERO ========== -->
   <section id="home" class="hero gradient-bg">
     <div class="container">
       <div class="hero-content">
         <h1 class="hero-name">Mendy Cohen</h1>
         <p class="hero-subtitle">Digital Portfolio</p>
-        <p class="hero-tagline">Driving operational excellence through data-driven insights &amp; process optimization.</p>
-        <div class="hero-buttons">
-          <a href="#projects" class="btn">Explore</a>
-          <a href="#about" class="btn">About</a>
-          <a href="#contact" class="btn">Contact</a>
-        </div>
+        <p class="hero-tagline">Transforming enterprise operations through AI, automation &amp; data-driven strategy.</p>
       </div>
       <div class="hero-photo">
         <img src="headshot.jpg" alt="Mendy Cohen">
@@ -38,52 +47,74 @@
 
         <div class="project-card">
           <div class="project-card-image">
-            <svg class="project-icon-svg" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="8" y="36" width="10" height="20" rx="2" fill="rgba(255,255,255,0.85)"/><rect x="22" y="24" width="10" height="32" rx="2" fill="rgba(255,255,255,0.9)"/><rect x="36" y="16" width="10" height="40" rx="2" fill="rgba(255,255,255,0.85)"/><rect x="50" y="8" width="10" height="48" rx="2" fill="rgba(255,255,255,0.95)"/><line x1="4" y1="58" x2="62" y2="58" stroke="rgba(255,255,255,0.6)" stroke-width="2"/></svg>
+            <img src="bny-logo.jpeg" alt="BNY logo" class="project-logo">
           </div>
           <div class="project-card-body">
-            <h3 class="project-card-title">BNY Treasury Services Optimization</h3>
-            <p class="project-card-desc">Led cross-functional analysis of team efficiency and headcount allocation, building performance dashboards in Power BI to drive automation and cost optimization across Treasury Services operations managing hundreds of millions in transactions.</p>
+            <h3 class="project-card-title">BNY Treasury Services &mdash; AI Transformation</h3>
+            <p class="project-card-desc">Spearheading AI-driven process reengineering using Microsoft Copilot and BNY's proprietary LLM (Eliza), partnering with McKinsey on organizational change, and building department health reports for senior leadership.</p>
             <div class="project-card-btn">
-              <a href="#" class="btn btn-sm">View</a>
+              <a href="bny-treasury.html" class="btn btn-sm">View</a>
             </div>
           </div>
         </div>
 
         <div class="project-card">
-          <div class="project-card-image" style="background: linear-gradient(135deg, #C3A6D8 0%, #E76F8B 100%);">
-            <svg class="project-icon-svg" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20 8h16l-6 20h14L24 56l6-24H18L20 8z" fill="rgba(255,255,255,0.9)" stroke="rgba(255,255,255,0.5)" stroke-width="1"/><circle cx="48" cy="12" r="4" fill="rgba(255,255,255,0.4)"/><circle cx="12" cy="48" r="3" fill="rgba(255,255,255,0.3)"/></svg>
+          <div class="project-card-image">
+            <img src="bny-logo.jpeg" alt="BNY logo" class="project-logo">
           </div>
           <div class="project-card-body">
             <h3 class="project-card-title">BNY Custody Banking Automation</h3>
             <p class="project-card-desc">Automated daily financial reporting using Power Query, reducing manual workload by 90% and improving data accuracy across the Custody Banking platform. Collaborated with cross-functional teams including BNY's India office.</p>
             <div class="project-card-btn">
-              <a href="#" class="btn btn-sm">View</a>
+              <a href="bny-custody.html" class="btn btn-sm">View</a>
             </div>
           </div>
         </div>
 
         <div class="project-card">
-          <div class="project-card-image" style="background: linear-gradient(135deg, #F4A261 0%, #e8c547 100%);">
-            <svg class="project-icon-svg" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"><ellipse cx="32" cy="32" rx="22" ry="14" transform="rotate(-30 32 32)" fill="rgba(255,255,255,0.85)" stroke="rgba(255,255,255,0.5)" stroke-width="1.5"/><line x1="22" y1="24" x2="42" y2="40" stroke="rgba(200,120,50,0.5)" stroke-width="1.5"/><line x1="26" y1="22" x2="30" y2="26" stroke="rgba(200,120,50,0.4)" stroke-width="1"/><line x1="34" y1="38" x2="38" y2="42" stroke="rgba(200,120,50,0.4)" stroke-width="1"/><line x1="28" y1="20" x2="32" y2="24" stroke="rgba(200,120,50,0.4)" stroke-width="1"/><line x1="32" y1="40" x2="36" y2="44" stroke="rgba(200,120,50,0.4)" stroke-width="1"/></svg>
+          <div class="project-card-image">
+            <svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="url(#aiProjGradient)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <defs>
+                <linearGradient id="aiProjGradient" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0%" stop-color="#F4A261"/>
+                  <stop offset="100%" stop-color="#E76F8B"/>
+                </linearGradient>
+              </defs>
+              <polyline points="16 18 22 12 16 6"></polyline>
+              <polyline points="8 6 2 12 8 18"></polyline>
+            </svg>
+          </div>
+          <div class="project-card-body">
+            <h3 class="project-card-title">AI Engineering Projects</h3>
+            <p class="project-card-desc">Self-directed builds: a multi-agent Python pipeline that synthesizes a daily intelligence brief, an open-source MCP server + Claude Code plugin for networking, and a SWIFT RMA self-service agent built at BNY.</p>
+            <div class="project-card-btn">
+              <a href="ai-projects.html" class="btn btn-sm">View</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-card-image">
+            <img src="james-sports-logo.jpg" alt="James Sports Group logo" class="project-logo">
           </div>
           <div class="project-card-body">
             <h3 class="project-card-title">James Sports Group &mdash; NIL Strategy</h3>
             <p class="project-card-desc">Advised 11 Division I college football athletes on brand positioning and partnership strategy, coordinating deal execution and shaping the startup's strategic roadmap from the ground up.</p>
             <div class="project-card-btn">
-              <a href="#" class="btn btn-sm">View</a>
+              <a href="james-sports.html" class="btn btn-sm">View</a>
             </div>
           </div>
         </div>
 
         <div class="project-card">
-          <div class="project-card-image" style="background: linear-gradient(135deg, #2D3436 0%, #636e72 100%);">
-            <svg class="project-icon-svg" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="10" y="8" width="36" height="48" rx="3" fill="rgba(255,255,255,0.85)"/><rect x="16" y="16" width="24" height="3" rx="1" fill="rgba(45,52,54,0.3)"/><rect x="16" y="23" width="24" height="2" rx="1" fill="rgba(45,52,54,0.2)"/><rect x="16" y="28" width="20" height="2" rx="1" fill="rgba(45,52,54,0.2)"/><rect x="16" y="33" width="24" height="2" rx="1" fill="rgba(45,52,54,0.2)"/><rect x="16" y="38" width="18" height="2" rx="1" fill="rgba(45,52,54,0.2)"/><rect x="16" y="43" width="22" height="2" rx="1" fill="rgba(45,52,54,0.15)"/><path d="M44 14l8-4v44l-8 4V14z" fill="rgba(255,255,255,0.6)"/></svg>
+          <div class="project-card-image">
+            <img src="cohen-notebook-logo.webp" alt="The Cohen Notebook logo" class="project-logo">
           </div>
           <div class="project-card-body">
             <h3 class="project-card-title">The Cohen Notebook</h3>
             <p class="project-card-desc">Founded and managed an independent publication covering the Tree of Life Synagogue trial, producing 24 long-form reports and building 130+ paid subscribers in 2 months on Substack.</p>
             <div class="project-card-btn">
-              <a href="#" class="btn btn-sm">View</a>
+              <a href="https://thecohennotebook.substack.com" target="_blank" rel="noopener noreferrer" class="btn btn-sm">View</a>
             </div>
           </div>
         </div>
@@ -96,21 +127,16 @@
   <section id="about" class="about gradient-bg">
     <div class="container">
       <div class="about-content">
-        <nav class="about-nav">
-          <a href="#projects" class="btn btn-sm">Explore</a>
-          <a href="#contact" class="btn btn-sm">Contact</a>
-          <a href="#home" class="btn btn-sm">Home</a>
-        </nav>
         <h2 class="section-heading">About Me</h2>
         <p class="about-text">
-          I'm Mendy Cohen, a Financial Operations Analyst in BNY's Early Talent Rotational Program. With a BA in Economics from the University of Pittsburgh and a background in Business Finance from Touro University, I bring a unique blend of analytical rigor and operational know-how to everything I do.
+          Mendy Cohen is a Fintech AI Transformation Analyst at BNY, where he leads AI-driven transformation across Treasury Services Payments. He builds and deploys agentic solutions using Microsoft Copilot and Eliza (BNY's proprietary LLM), partners with McKinsey on enterprise-wide change strategy, and shepherds automation use cases through governance approval in a highly regulated banking environment.
         </p>
         <p class="about-text" style="margin-top: 1.2rem;">
-          From automating financial reporting to advising D1 athletes on brand strategy, I thrive at the intersection of data, process optimization, and strategic thinking. I'm passionate about defense and aerospace, and I'm driven to apply my skills in finance, operations, and process improvement to support the missions that matter most.
+          His work &mdash; automating complex operations, reengineering legacy processes, driving adoption of emerging technology across large organizations &mdash; is directly transferable to defense and aerospace. These industries need people who can bridge the gap between cutting-edge AI and operational execution at scale. That's exactly where he wants to be, applying his skills to the missions that protect and advance our national security.
         </p>
-      </div>
-      <div class="about-photo">
-        <img src="headshot.jpg" alt="Mendy Cohen">
+        <p class="about-text" style="margin-top: 1.2rem;">
+          Mendy holds a BA in Economics from the University of Pittsburgh and a background in Business Finance from Touro University.
+        </p>
       </div>
     </div>
   </section>
@@ -130,6 +156,13 @@
             <span class="skill-tag">Data Modeling</span>
             <span class="skill-tag">SQL</span>
             <span class="skill-tag">PowerPoint</span>
+            <span class="skill-tag">Microsoft Copilot</span>
+            <span class="skill-tag">AI/LLM Integration</span>
+            <span class="skill-tag">Prompt Engineering</span>
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">GitHub Actions/CI-CD</span>
+            <span class="skill-tag">MCP (Model Context Protocol)</span>
+            <span class="skill-tag">Generative &amp; Agentic AI</span>
           </div>
         </div>
         <div class="skills-category">
@@ -137,10 +170,12 @@
           <div class="skills-tags">
             <span class="skill-tag">Data Automation</span>
             <span class="skill-tag">Financial Analysis</span>
+            <span class="skill-tag">Process Reengineering</span>
+            <span class="skill-tag">AI-Driven Workflow Design</span>
             <span class="skill-tag">Cost Optimization</span>
-            <span class="skill-tag">Process Improvement</span>
+            <span class="skill-tag">Change Management</span>
+            <span class="skill-tag">Governance &amp; Compliance</span>
             <span class="skill-tag">Econometrics</span>
-            <span class="skill-tag">Budgeting</span>
           </div>
         </div>
       </div>
@@ -164,11 +199,9 @@
           </a>
         </div>
       </div>
-      <nav class="contact-nav">
-        <a href="#projects" class="btn btn-sm">Explore</a>
-        <a href="#about" class="btn btn-sm">About</a>
-        <a href="#home" class="btn btn-sm">Home</a>
-      </nav>
+      <div class="contact-resume">
+        <a href="Mendy_Cohen_Resume_2026.pdf" target="_blank" class="btn">Download Resume</a>
+      </div>
     </div>
   </section>
 
